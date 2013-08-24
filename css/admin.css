@@ -1,0 +1,46 @@
+/* <tbody class="ui-sortable-container"> */
+.ui-sortable-container {
+  overflow: auto;
+  -ms-overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.ui-sortable-container tr:hover {
+  cursor: move;
+}
+
+.ui-sortable-placeholder {
+  height: 43px;
+}
+
+#inner-shortcuts {
+    right: 0;
+}
+#inner-shortcuts {
+    margin: 0 !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+
+.btn
+{
+	margin-top: 0px;
+}
+
+section.item
+{
+	margin-top:5px;
+}
+
+/* Fix 100% width */
+.chzn-container, .chzn-drop, .chzn-drop .chzn-search, .chzn-drop .chzn-search input {
+  width: 100% !important;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Override width */
+.chzn-container { width:250px !important; }

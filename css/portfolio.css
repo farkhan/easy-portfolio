@@ -1,0 +1,102 @@
+.category
+{
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+.transparent-overlay
+{
+	display:block;
+	position:absolute;
+}
+.text-overlay
+{
+	position:absolute;
+	text-align:center;
+	color: #cccccc;
+	height: 60px;
+	line-height:60px;
+	width:220px;
+}
+
+
+.portfolio_item {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom:20px;
+}
+
+
+
+#portfolio-content
+{
+	width:70%;
+	float:left;
+}
+
+#portfolio-list
+{
+	width:30%;
+	float:left;
+}
+
+.title
+{
+	padding:10px;
+}
+.description
+{
+	padding: 0px 10px 10px 10px;
+}
+
+.pad-10
+{
+	padding:10px;
+}
+.category-item
+{
+	
+    font-size: 14px;
+    margin-bottom:30px;
+    padding-left:20px;
+}
+
+
+.category-item.active
+{
+
+}
+ul.categories
+{
+	list-style-type: none;
+}
+
+.nivoSlider {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+a.nivo-prevNav {
+    left: 15px;
+}
+.nivo-directionNav a {
+    background: url("../img/arrows.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    height: 30px;
+
+    text-indent: -9999px;
+    transition: all 200ms ease-in-out 0s;
+    overflow:hidden;
+    width: 30px;
+}
+
+
+a.nivo-nextNav {
+    background-position: -30px 0;
+    right: 15px;
+}
