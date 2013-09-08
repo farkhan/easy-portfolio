@@ -122,6 +122,7 @@ class Admin_Items extends Admin_Controller
 						->append_js('module_path::delete-jquery.js')
 						//Load jQuery and jQuery UI
 						->append_js('module_path::jquery.js')
+						->append_js('module_path::jquery-ui.min.js')
 						//Load jQuery File Upload plugin by blueImp
 					   	->append_js('module_path::jquery.fileupload.js')
 					   	->append_js('module_path::jquery.fileupload-ui.js')
