@@ -25,7 +25,11 @@ class portfolio extends Public_Controller
 	  $this->load->model('portfolio_categories_m');
 	  Asset::add_path ( 'theme_path', BASE_URL.'addons/shared_addons/themes/cbd/' );
       $this->template
+      ->append_metadata('module::jquery.js')
      ->append_css('module::portfolio.css')
+	 ->append_metadata('<script src="http://fotorama.s3.amazonaws.com/4.3.0/fotorama.js"></script>')
+	 ->append_metadata('<link  href="http://fotorama.s3.amazonaws.com/4.3.0/fotorama.css" rel="stylesheet">')
+	 
 	 ->append_css('module::960.css');
 	  
     }
@@ -52,8 +56,7 @@ class portfolio extends Public_Controller
 		 				->set('related_items', $related_items)
 		 				->set('instance', $instance)
 						//Required for FotoramaJS
-						->append_metadata('<script src="http://fotorama.s3.amazonaws.com/4.3.0/fotorama.js"></script>')
-						->append_metadata('<link  href="http://fotorama.s3.amazonaws.com/4.3.0/fotorama.css" rel="stylesheet">')
+						
 						// Build the view using portfolio/views/item.php
 						->build('item');
      }

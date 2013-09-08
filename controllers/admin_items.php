@@ -122,7 +122,6 @@ class Admin_Items extends Admin_Controller
 						->append_js('module_path::delete-jquery.js')
 						//Load jQuery and jQuery UI
 						->append_js('module_path::jquery.js')
-						->append_js('module_path::jquery-ui.min.js')
 						//Load jQuery File Upload plugin by blueImp
 					   	->append_js('module_path::jquery.fileupload.js')
 					   	->append_js('module_path::jquery.fileupload-ui.js')
@@ -491,7 +490,7 @@ class Admin_Items extends Admin_Controller
 	 **/
 	public function delete_item_images($id = 0)
 	{
-		$image = $this->portfolio_items_images_m->get($id);
+
 		// make sure the button was clicked and that there is an array of ids
 		if (isset($_POST['btnAction']) AND is_array($_POST['action_to']))
 		{
@@ -503,7 +502,7 @@ class Admin_Items extends Admin_Controller
 			// they just clicked the link so we'll delete that one
 			$this->portfolio_items_images_m->delete($id);
 		}
-		redirect('admin/'.$this->module.'/items/images/'.$image->parent);
+		redirect('admin/'.$this->module.'/items/images/'.$id);
 	}
 	
 	public function order() {

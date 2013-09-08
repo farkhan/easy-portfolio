@@ -16,7 +16,7 @@
 
 <section class="item">
 	<div class="content">
-	<?php echo form_open('admin/'.$this->module.'/items/delete_item_images');?>
+	<?php echo form_open('admin/'.$this->module.'/items/delete_item_images/'.$id);?>
 	<?php if (!empty($item_images)): ?>
 		<table border="0" class="table-list" cellspacing="0">
 			<thead>
